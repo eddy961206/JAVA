@@ -22,9 +22,9 @@ public class J1025_10 {
 		char ch = str.charAt(0);
 		char toUC = (char)(ch-32);
 		if (ch >= 'a' && ch <= 'z') {               // 소문자니?
-			System.out.println((char)(ch-32));		// (참이면) 대문자로 바꿔
+			System.out.println((char)(ch-32));		// (ch-32)로 묶어줘야. '대문자로 바꿔'
 		}else {
-			System.out.println((char)(ch+32));		// (아니면) 소문자로 바꿔
+			System.out.println((char)(ch+32));		// (아니면) '소문자로 바꿔'
 		}
 		
 		
