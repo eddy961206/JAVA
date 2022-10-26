@@ -12,7 +12,8 @@ public class J1025_09 {
 		
 		System.out.println(0.1d); //0.1
 		System.out.println(0.1f); //0.1
-		System.out.println(0.1d == 0.1f); //false. ==이 형 변환을 시켜줌. float 가 double보다 작으니까 작은 쪽(double->float)으로 변환해야 같아질 수 있음.
+		System.out.println(0.1d == 0.1f); //false. == -> float을 double로 형 변환을 시켜줌(큰쪽으로). 
+						//float 가 double보다 작으니까 작은 쪽(double->float)으로 변환해야 같아질 수 있음.
 	
 		System.out.println((float)0.1d == 0.1f); //true  0.1f->0.10000000  0.1d -> 0.1000000000000000
 		double d = 0.1f;
