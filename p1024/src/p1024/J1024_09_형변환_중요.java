@@ -6,9 +6,10 @@ public class J1024_09_형변환_중요 {
 
 	public static void main(String[] args) {
 		// int -> String   7+"" = "7" 빈 문자열 더하면 숫자가 문자열로 바뀜
-		// 숫자char -> int  '1' - '0' = 1 빼기 영하면 됨
-		// String -> char  charAt();
-        // String -> int 변경 : Integer.parseInt()
+		// String -> int 변경 : Integer.parseInt()
+		// 숫자char -> int  : '1' - '0' = 1 빼기 영하면 됨
+		// String -> char  : charAt();
+		// char -> String   :  +""
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("첫 번째 숫자 입력하세요");
