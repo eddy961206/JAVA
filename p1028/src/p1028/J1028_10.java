@@ -8,17 +8,17 @@ public class J1028_10 {
 		//입력한 구구단부터 9단까지 출력하시오 5->56789단
 		Scanner scan = new Scanner(System.in);
 		System.out.println("숫자 입력하시오");
-		int input = scan.nextInt();
-		int j = '0';
+		int input =scan.nextInt();
 	
 		for(int i=2;i<10;i++) {
-			if(i>=input) {
-				for(j<10) {
-					System.out.printf("%d * %d = %d	\n",i,j,i*j);
-				}
+			if(input>i) {
+				continue;
 			}
-			
+			for (int j = 1; j < 10; j++) {
+				System.out.printf("%d * %d = %d	\n",i,j,i*j);
+			}
 		}
+
 	}
 
 }
