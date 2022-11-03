@@ -134,16 +134,16 @@ public class J1102_03_성적출력_2차원배열_등수추가_시험 {
 			case 4: // 등수처리
 				System.out.println("[[  등수처리  ]]");
 
-//				// 등수처리 입력
-//				for (int i = 0; i < count; i++) {
-//					r_count = 1; // 등수 초기화
-//					for (int j = 0; j < count; j++) {
-//						if (total[i] < total[j]) { // 비교해서.
-//							r_count++;
-//						} // if
-//					} // 작은for
-//					rank[i] = r_count; // 등수를 등수배열에 입력
-//				} // 큰for (등수처리 끝)
+				// 등수처리 입력
+				for (int i = 0; i < count; i++) {
+					r_count = 1; // 등수 초기화
+					for (int j = 0; j < count; j++) {
+						if (total[i] < total[j]) { // 비교해서.
+							r_count++;
+						} // if
+					} // 작은for
+					rank[i] = r_count; // 등수를 등수배열에 입력
+				} // 큰for (등수처리 끝)
 
 				System.out.println("등수 처리가 완료되었습니다.");
 				System.out.println();

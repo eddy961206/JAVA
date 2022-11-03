@@ -31,17 +31,19 @@ public class J1103_09_로또_하트추가연습 {
 			lotto[r_num] = temp;
 		} // for
 		
-		// lotto_input (String배열) 출력
-		for (int i = 0; i < lotto_output.length; i++) {
-			if(i%5==0 && i!=0) {
-				System.out.println();
-			}
-			System.out.printf("%s\t",i+1);
-		}
-		
+	
 		
 		// 4. 번호 6개 입력받기.
 		while (count < 6) {
+			// lotto_output (String배열) 출력
+			for (int i = 0; i < lotto_output.length; i++) {
+				if(i%5==0 && i!=0) {
+					System.out.println();
+				}
+				System.out.printf("%s\t",i+1);
+			}
+			System.out.println();
+			
 			System.out.println("로또번호를 입력하세요. (1~45) >>");
 			input[count] = scan.nextInt();
 			count++;
