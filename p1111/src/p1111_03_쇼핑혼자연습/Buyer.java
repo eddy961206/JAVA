@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Buyer {
 	static Scanner scan = new Scanner(System.in);
-	int count;
+	int count,choice;
 	String name;
 	int myMoney;
 	int point;
@@ -20,6 +20,22 @@ public class Buyer {
 		this.myMoney = myMoney;
 		this.point = point;
 	}
+	
+	int menu() {
+		System.out.printf("[환영합니다, %s 고객님]\n",this.name);
+		System.out.println("1. 머니충전");
+		System.out.println("2. TV 구매");
+		System.out.println("3. 컴퓨터 구매");
+		System.out.println("4. 세탁기 구매");
+		System.out.println("7. 보너스사용");
+		System.out.println("8. 구매내역");
+		System.out.println("9. 잔액확인");
+		
+		choice = scan.nextInt();
+		return choice;
+	}
+	
+	
 
 	void buy(Product p) {
 		if(count<10) { //10개 이상 못 삼
