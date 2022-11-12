@@ -4,9 +4,13 @@ import java.util.Scanner;
 
 public class Buyer {
 	static Scanner scan = new Scanner(System.in);
+	int count;
 	String name;
 	int myMoney;
 	int point;
+	int totalMoney;
+	int totalPoint;
+	Product[] cart = new Product[10];
 
 	Buyer() {
 	}
@@ -18,16 +22,23 @@ public class Buyer {
 	}
 
 	void buy(Product p) {
-		if (p.price > this.myMoney) {
-			System.out.printf("잔액이 %d원 부족합니다.\n\n", p.price - myMoney);
-			return;
+		if(count<10) { //10개 이상 못 삼
+			if (p.price > this.myMoney) {
+				System.out.printf("구매 실패 : 잔액이 %d원 부족합니다.\n\n", p.price - myMoney);
+				return;
+			} else {
+				System.out.println(p.productName + " 구매가 완료됐습니다 (-" + p.price + ")");
+				this.myMoney -= p.price;
+				this.point += p.point;
+				cart[count] = p;
+				count++;
+				System.out.println(this.name + "님의 남은 잔액 : " + this.myMoney);
+				System.out.println("현재 포인트 : \n" + this.point);
+				System.out.println();
+			}//if
 		} else {
-			System.out.println(p.productName + " 구매가 완료됐습니다 (-" + p.price + ")");
-			this.myMoney -= p.price;
-			this.point += p.point;
-			System.out.println(this.name + "님의 남은 잔액 : " + this.myMoney);
-			System.out.println("현재 포인트 : \n" + this.point);
-		}
+			System.out.println("너무 많이 사셨습니다. 그만 사세요");
+		}//if
 	} // 구매 메소드
 
 	void recharge() {
@@ -46,20 +57,32 @@ public class Buyer {
 		if (choice == 1) {
 			myMoney += point;
 			point = 0;
-			System.out.println("포인트 전환이 완료됐습니다.\n");
-			System.out.printf("현재 잔액 : %d\n", myMoney);
+			System.out.println("포인트 전환이 완료됐습니다.");
+			System.out.printf("현재 잔액 : %d\n\n", myMoney);
 		} else if (choice == 2) {
 			System.out.println("포인트 전환을 취소합니다.");
 			return;
 		} else {
-			System.out.println("잘못된 입력입니다. 이전 페이지로 돌아갑니다.");
+			System.out.println("잘못된 입력입니다. 이전 페이지로 돌아갑니다.\n");
 			return;
 		}
 	}
 
+	void cart() {
+		System.out.printf("[[ %s님의 구매 목록 ]]\n", name);
+		for (int i = 0; i < count; i++) {
+			System.out.printf("%d. %s - %d원 / 포인트 %d 적립\n", 
+					i + 1, cart[i].productName, cart[i].price, cart[i].point);
+			totalMoney += cart[i].price; 
+			totalPoint += cart[i].point; 
+		}
+		System.out.printf("\n총 사용 금액 : %d\n",totalMoney);
+		System.out.printf("총 누적 포인트 : %d\n\n",totalPoint);
+	}
+
 	void remain() {
 		System.out.printf("%s님의 잔액 : %d\n", name, myMoney);
-		System.out.printf("%s님의 포인트 : %d\n\n", name, point);
+		System.out.printf("%s님의 보유 포인트 : %d\n\n", name, point);
 	}
 
 }// class
