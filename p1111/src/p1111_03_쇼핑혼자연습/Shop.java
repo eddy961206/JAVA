@@ -48,7 +48,7 @@ public class Shop {
 				b1.bonusUse();
 				break;
 			case 8:// 8. 구매내역
-				b1.recharge();
+				b1.cart();
 				break;
 			case 9:// 9. 잔액확인
 				b1.remain();
