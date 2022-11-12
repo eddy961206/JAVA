@@ -1,5 +1,6 @@
 package p1111_03_쇼핑혼자연습;
 
+import java.awt.Menu;
 import java.util.Scanner;
 
 
@@ -20,16 +21,7 @@ public class Shop {
 		Wash w = new Wash();
 	
 		while(true) {
-			System.out.printf("[환영합니다, %s 고객님]\n",b1.name);
-			System.out.println("1. 머니충전");
-			System.out.println("2. TV 구매");
-			System.out.println("3. 컴퓨터 구매");
-			System.out.println("4. 세탁기 구매");
-			System.out.println("7. 보너스사용");
-			System.out.println("8. 구매내역");
-			System.out.println("9. 잔액확인");
-			
-			choice = scan.nextInt();
+			choice = b1.menu();
 			
 			switch (choice) {
 			case 1: // 1.머니충전
