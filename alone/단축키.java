@@ -23,6 +23,7 @@
 //		Preferences -> Java -> Editor -> Typing -> "Automatically insert at correct position"
 //		
 //		단축키 
+//		Ctrl + Shift + f : 모든 코드 정렬
 //		Ctrl + 1 : Quick Fix 에러가 발생했을 경우 Quick Fix를 통해 쉽게 해결이 가능함
 //		Alt + Shift + R : 변수 같은 거 한꺼번에 편집
 //		들여쓰기만 정리 : 전체선택(Ctrl + A) 후 Ctrl + I
@@ -31,6 +32,10 @@
 //		Ctrl + Shift +L : 모든 단축키 보여줌
 //		Ctrl + O : 멤버의 목록 나옴
 //		함수 클릭해놓고 F1 : help 통해서 자바api doc 볼 수.
+//		F3 : 선언 위치로 이동
+//		Ctrl + F6 : Editor 창간의 이동
+//		Ctrl + F7 : View 이동 메뉴
+//		Ctrl + F8 : Prespectives 이동 메뉴
 //		
 //	}
 //}
