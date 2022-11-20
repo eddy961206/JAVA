@@ -30,6 +30,7 @@
 //		Ctrl + J : Incremental find. 단어 일부만으로 찾을 수. 화살표 위아래로.
 //		Ctrl + Shift +L : 모든 단축키 보여줌
 //		Ctrl + O : 멤버의 목록 나옴
+//		함수 클릭해놓고 F1 : help 통해서 자바api doc 볼 수.
 //		
 //	}
 //}
