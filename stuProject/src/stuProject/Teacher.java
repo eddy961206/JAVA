@@ -9,7 +9,6 @@ public class Teacher {
 	
 	String id;
 	String pw;
-	int flag;
 
 	Teacher() {
 	}
@@ -18,8 +17,5 @@ public class Teacher {
 		this.id = id;
 		this.pw = pw;
 	}
-
-	
-
 }
 
