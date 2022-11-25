@@ -7,12 +7,13 @@ public class StuManager {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		StuCal stuCal = new StuCal();
+		Teacher teacher = new Teacher();
 		String name = "";
 		int choice = 0;
 			
-		stuCal.logIn();
+		teacher.logIn();
 						
-		if(stuCal.flag == 1) {
+		if(teacher.flag == 1) {
 			loop:
 				while(true) {
 					
@@ -49,7 +50,8 @@ public class StuManager {
 					}//switch
 					
 				}//while
-		}
+		}//if
+		System.out.println("시스템 종료,,");
 		
 		
 		
