@@ -6,14 +6,14 @@ import java.util.Scanner;
 public class StuManager {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		LogIn login = new LogIn();
 		StuCal stuCal = new StuCal();
-		Teacher teacher = new Teacher();
 		String name = "";
 		int choice = 0;
 			
-		teacher.logIn();
+		login.logIn();
 						
-		if(teacher.flag == 1) {
+		if(login.flag == 1) {
 			loop:
 				while(true) {
 					
