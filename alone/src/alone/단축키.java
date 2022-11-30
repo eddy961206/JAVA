@@ -1,5 +1,6 @@
 //package alone;
-//
+//  학원   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
+
 //public class 단축키 {
 //	public static void main(String[] args) {
 //		1. https://okky.kr/articles/685440
@@ -37,5 +38,6 @@
 //		Ctrl + F7 : View 이동 메뉴
 //		Ctrl + F8 : Prespectives 이동 메뉴
 //		
+
 //	}
 //}
