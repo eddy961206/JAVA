@@ -1,5 +1,6 @@
 //package alone;
 //  학원   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
+           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
 
 //public class 단축키 {
 //	public static void main(String[] args) {
