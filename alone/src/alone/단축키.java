@@ -1,7 +1,8 @@
 //package alone;
-//  학원   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
-           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
-
+//  학원     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
+//  놑북?    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
+//  집데탑   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
+           
 //public class 단축키 {
 //	public static void main(String[] args) {
 //		1. https://okky.kr/articles/685440
