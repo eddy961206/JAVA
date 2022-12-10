@@ -2,7 +2,7 @@
 //  학원     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
 //  놑북?    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
 //  집데탑   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
-//  집데탑2   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     
+//  집데탑2   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
 
 //public class 단축키 {
 //	public static void main(String[] args) {
